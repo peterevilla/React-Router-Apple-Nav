@@ -1,13 +1,9 @@
 import React from 'react'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import { logDOM } from '@testing-library/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { apple } from '@fortawesome/free-brands-svg-icons' 
+import { faApple } from "@fortawesome/free-brands-svg-icons";
+import { faSearch, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -19,16 +15,18 @@ import { apple } from '@fortawesome/free-brands-svg-icons'
     return(
 
 
-      <div className='nav-wrapper'>
-        <Link className='links' to={`/`} ><FontAwesomeIcon icon={['fab', 'apple']} /></Link>
-        <Link className='links' to={`/Mac`}><p>Mac</p></Link>
-        <Link className='links' to={`/Ipad`}><p>Ipad</p></Link>
-        <Link className='links' to={`/Iphone`}><p>Iphone</p></Link>
-        <Link className='links' to={`/Watch`}><p>Watch</p></Link>
-        <Link className='links' to={`/TV`}><p>TV</p></Link>
-        <Link className='links' to={`/Music`}><p>Music</p></Link>
-        <Link className='links' to={`/Support`}><p>Support</p></Link>
-      </div>
+      <nav className='nav-wrapper'>
+        <NavLink className='links' className='logo' to={`/`} ><FontAwesomeIcon icon={faApple}/></NavLink>
+        <NavLink className='links' to={`/Mac`}><p>Mac</p></NavLink>
+        <NavLink className='links' to={`/Ipad`}><p>Ipad</p></NavLink>
+        <NavLink className='links' to={`/Iphone`}><p>Iphone</p></NavLink>
+        <NavLink className='links' to={`/Watch`}><p>Watch</p></NavLink>
+        <NavLink className='links' to={`/TV`}><p>TV</p></NavLink>
+        <NavLink className='links' to={`/Music`}><p>Music</p></NavLink>
+        <NavLink className='links' to={`/Support`}><p>Support</p></NavLink>
+        <NavLink className='links' className='logo' to={`/`} ><FontAwesomeIcon icon={faSearch}/></NavLink>
+        <NavLink className='links' className='logo' to={`/`} ><FontAwesomeIcon icon={faShoppingBag}/></NavLink>
+      </nav>
 
     )
 
