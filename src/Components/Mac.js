@@ -1,10 +1,10 @@
 import React from 'react'
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    Route, NavLink
   } from "react-router-dom";
+import SubNav from './SubNav';
+
 
 
 
@@ -13,8 +13,12 @@ import {
 
     return(
 
-        <p>Mac</p>
+    <div className='sub-nav-mav'>
 
+        <SubNav/>
+    
+    </div>
+      
     )
 
   }

@@ -5,6 +5,8 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import SubNav from './SubNav';
+  
 
 
 
@@ -13,7 +15,11 @@ import {
 
     return(
 
-        <p>Iphone</p>
+        <div className='sub-nav-iphone'>
+
+          <SubNav/>
+
+        </div>
 
     )
 

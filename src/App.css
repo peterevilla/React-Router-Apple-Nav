@@ -39,7 +39,7 @@
 
 .nav-wrapper {
 
-  background-color: black;
+  background-color: #303030;
   color:lightgray;
   height: 45px;
   display: flex;
@@ -52,10 +52,18 @@
   margin-left: 2% ;
   margin-right: 2% ;
   text-decoration: none;
+  color: lightgrey;
 }
+
+
 
 .links:visited {
   color: lightgray;
+}
+
+.links:hover {
+
+  color: white;
 }
 
 .logo {
@@ -68,6 +76,49 @@ font-size: 20px;
 
 }
 
+
+
 .logo:visited {
   color: lightgray;
+}
+
+.logo:hover {
+
+  color:white;
+}
+
+.sub-nav {
+
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.sub-nav-items {
+
+  margin-left: 1% ;
+  margin-right: 1% ;
+  font-size: 0.8rem;
+  margin-top: 3.5%;
+  color: grey;
+
+}
+
+.sub-nav-items:hover {
+
+  color: #8EBAE6;
+}
+
+.sub-nav-mac {
+
+  background-color: #FAFAFA;
+  height: 120px;
+}
+
+.sub-nav-iphone {
+
+  background-color: #111113;
+  height: 120px;
 }
