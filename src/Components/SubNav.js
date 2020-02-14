@@ -6,23 +6,26 @@ import {
 import data from '../data'
 
 
-  const SubNav = () => {
+  const SubNav = props => {
 
-    const [products] = useState(data[0])
+    const [products] = useState(data)
+    const param = props.match.path;
 
-    console.log(products)
+    
+
+    console.log(data)
 
     return(
 
-        <div className='sub-nav'>
+        // <div className='sub-nav'>
           
-          {products.mac.map(item => (
+        //   { products.Mac.map(item => (
 
-          <div className='sub-nav-items'>{item}</div>
-          ))}
+        //   <div className='sub-nav-items'>{item}</div>
+        //   ))}
 
-        </div>
-        
+        // </div>
+        <p>hola</p>
     )
 
   }

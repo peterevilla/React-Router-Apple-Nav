@@ -8,14 +8,14 @@ import SubNav from './SubNav';
 
 
 
-  const Mac = () => {
+  const Mac = props => {
 
-
+    console.log(props.match)
     return(
 
     <div className='sub-nav-mav'>
 
-        <SubNav/>
+        <SubNav match={props.match}/>
     
     </div>
       

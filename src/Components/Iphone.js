@@ -10,7 +10,7 @@ import SubNav from './SubNav';
 
 
 
-  const Iphone = () => {
+  const iPhone = () => {
 
 
     return(
@@ -26,4 +26,4 @@ import SubNav from './SubNav';
   }
 
 
-  export default Iphone;
+  export default iPhone;

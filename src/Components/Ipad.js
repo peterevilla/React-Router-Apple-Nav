@@ -9,7 +9,7 @@ import {
 
 
 
-  const Ipad = () => {
+  const iPad = () => {
 
 
     return(
@@ -25,4 +25,4 @@ import {
   }
 
 
-  export default Ipad;
+  export default iPad;

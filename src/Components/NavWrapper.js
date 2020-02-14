@@ -18,8 +18,8 @@ import { faSearch, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
       <nav className='nav-wrapper'>
         <NavLink className='links' className='logo' to={`/`} ><FontAwesomeIcon icon={faApple}/></NavLink>
         <NavLink className='links' to={`/Mac`}><p>Mac</p></NavLink>
-        <NavLink className='links' to={`/Ipad`}><p>Ipad</p></NavLink>
-        <NavLink className='links' to={`/Iphone`}><p>Iphone</p></NavLink>
+        <NavLink className='links' to={`/Ipad`}><p>iPad</p></NavLink>
+        <NavLink className='links' to={`/Iphone`}><p>iPhone</p></NavLink>
         <NavLink className='links' to={`/Watch`}><p>Watch</p></NavLink>
         <NavLink className='links' to={`/TV`}><p>TV</p></NavLink>
         <NavLink className='links' to={`/Music`}><p>Music</p></NavLink>
