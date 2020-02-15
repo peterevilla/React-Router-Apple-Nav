@@ -5,15 +5,20 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import SubNav from './SubNav';
 
 
 
-  const Music = () => {
+  const Music = props => {
 
 
     return(
 
-        <p>Music</p>
+      <div className='sub-nav-mav'>
+
+        <SubNav match={props.match}/>
+    
+      </div>
 
     )
 

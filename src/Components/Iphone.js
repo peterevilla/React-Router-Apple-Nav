@@ -10,14 +10,14 @@ import SubNav from './SubNav';
 
 
 
-  const iPhone = () => {
+  const Iphone = props => {
 
 
     return(
 
         <div className='sub-nav-iphone'>
 
-          <SubNav/>
+          <SubNav match={props.match}/>
 
         </div>
 
@@ -26,4 +26,4 @@ import SubNav from './SubNav';
   }
 
 
-  export default iPhone;
+  export default Iphone;

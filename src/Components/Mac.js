@@ -10,7 +10,7 @@ import SubNav from './SubNav';
 
   const Mac = props => {
 
-    console.log(props.match)
+  
     return(
 
     <div className='sub-nav-mav'>

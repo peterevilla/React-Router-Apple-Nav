@@ -11,21 +11,31 @@ import data from '../data'
     const [products] = useState(data)
     const param = props.match.path;
 
+    const item = products.find(item => {
+      let str = param;
+      str = str.substring(1);
+      return item.name === str;
+    });
     
 
-    console.log(data)
+    
+    console.log(param)
+    console.log(item.models)
 
-    return(
+    return (
 
-        // <div className='sub-nav'>
+        <div className='sub-nav'>
           
-        //   { products.Mac.map(item => (
+          { item.models.map(ele => (
 
-        //   <div className='sub-nav-items'>{item}</div>
-        //   ))}
+          <div className='sub-nav-items'>{ele}</div>
+          ))}
 
-        // </div>
-        <p>hola</p>
+        </div>
+
+        // <p>hola</p>
+       
+       
     )
 
   }

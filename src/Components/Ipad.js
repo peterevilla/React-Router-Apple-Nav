@@ -9,14 +9,14 @@ import {
 
 
 
-  const iPad = () => {
+  const Ipad = props => {
 
 
     return(
 
       <div className='sub-nav-mav'>
 
-        <SubNav/>
+        <SubNav match={props.match}/>
   
       </div>
 
@@ -25,4 +25,4 @@ import {
   }
 
 
-  export default iPad;
+  export default Ipad;

@@ -8,12 +8,17 @@ import {
 
 
 
-  const Support = () => {
+
+  const Support = props => {
 
 
     return(
 
+      <div className='sub-nav-mav'>
+
         <p>Support</p>
+    
+      </div>
 
     )
 

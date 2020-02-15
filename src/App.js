@@ -8,8 +8,8 @@ import {
   Link
 } from "react-router-dom";
 import Mac from './Components/Mac';
-import iPad from './Components/iPad';
-import iPhone from './Components/iPhone';
+import Ipad from './Components/Ipad';
+import Iphone from './Components/Iphone';
 import Watch from './Components/Watch';
 import TV from './Components/TV';
 import Music from './Components/Music';
@@ -20,13 +20,13 @@ function App() {
   return (
     <div className="App">
       <Route path="/" component={NavWrapper} />
-      <Route path="/Mac" render={routeProps => {   console.log("routeProps", routeProps);  return (<Mac match={routeProps.match}/>);}}/>
-      <Route path="/Ipad" component={iPad} />
-      <Route path="/Iphone" component={iPhone} />
-      <Route path="/Watch" component={Watch} />
-      <Route path="/TV" component={TV} />
-      <Route path="/Music" component={Music} />
-      <Route path="/Support" component={Support} />
+      <Route path="/Mac" render={routeProps => { return (<Mac match={routeProps.match}/>);}}/>
+      <Route path="/Ipad" render={routeProps => { return (<Ipad match={routeProps.match}/>);}}/>
+      <Route path="/Iphone" render={routeProps => { return (<Iphone match={routeProps.match}/>);}}/>
+      <Route path="/Watch" render={routeProps => { return (<Watch match={routeProps.match}/>);}}/>
+      <Route path="/TV" render={routeProps => { return (<TV match={routeProps.match}/>);}}/>
+      <Route path="/Music" render={routeProps => { return (<Music match={routeProps.match}/>);}}/>
+      <Route path="/Support" render={routeProps => { return (<Support match={routeProps.match}/>);}}/>
     </div>
   );
 }

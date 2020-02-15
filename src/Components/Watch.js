@@ -5,15 +5,20 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import SubNav from './SubNav';
 
 
 
-  const Watch = () => {
+  const Watch = props => {
 
 
     return(
 
-        <p>Watch</p>
+      <div className='sub-nav-mav'>
+
+        <SubNav match={props.match}/>
+    
+      </div>
 
     )
 
