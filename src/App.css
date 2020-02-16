@@ -101,7 +101,7 @@ font-size: 20px;
   margin-left: 1% ;
   margin-right: 1% ;
   font-size: 0.8rem;
-  margin-top: 3.5%;
+  margin-top: 2.5%;
   color: grey;
 
 }
@@ -121,4 +121,20 @@ font-size: 20px;
 
   background-color: #111113;
   height: 120px;
+}
+
+a {
+
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+
+  color: #8EBAE6;
+}
+
+.icon-pro {
+
+  font-size: 30px;
 }

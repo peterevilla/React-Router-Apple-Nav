@@ -4,6 +4,8 @@ import {
     Route, NavLink
   } from "react-router-dom";
 import data from '../data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faApple } from "@fortawesome/free-brands-svg-icons";
 
 
   const SubNav = props => {
@@ -28,7 +30,13 @@ import data from '../data'
           
           { item.models.map(ele => (
 
-          <div className='sub-nav-items'>{ele}</div>
+          <div className='sub-nav-items'>
+
+        <a href='#'>  
+        <FontAwesomeIcon className='icon-pro' icon={faApple}/><br/>
+        {ele}</a>
+            
+          </div>
           ))}
 
         </div>
